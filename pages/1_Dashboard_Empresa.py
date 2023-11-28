@@ -255,7 +255,7 @@ with tab3:
         'Cidade', 'Densidade de tráfego', 'latitude', 'longitude']
 
     # Desenhar o mapa
-    map_ = folium.Map(zoom_start=11, tiles='Stamen Terrain')
+    map_ = folium.Map(zoom_start=11)
     for index, location_info in data_plot.iterrows():
         folium.Marker([location_info['latitude'],
                        location_info['longitude']],
